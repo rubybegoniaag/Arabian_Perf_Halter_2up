@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Halter Score Calculator</title>
+    <style>
+        .category {
+            margin-bottom: 20px;
+        }
+        .score {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Performance Halter Score Calculator</h1>
+    <form id="scoreForm">
+        <div class="category">
+            <label>A Athletic Structure:</label><br>
+            <input type="radio" name="athleticStructure" value="10" class="score">10
+            <input type="radio" name="athleticStructure" value="10.5" class="score">10.5
+            <input type="radio" name="athleticStructure" value="11" class="score">11
+            <input type="radio" name="athleticStructure" value="11.5" class="score">11.5
+            <input type="radio" name="athleticStructure" value="12" class="score">12
+            <input type="radio" name="athleticStructure" value="12.5" class="score">12.5
+            <input type="radio" name="athleticStructure" value="13" class="score">13
+            <input type="radio" name="athleticStructure" value="13.5" class="score">13.5
+            <input type="radio" name="athleticStructure" value="14" class="score">14
+            <input type="radio" name="athleticStructure" value="14.5" class="score">14.5
+            <input type="radio" name="athleticStructure" value="15" class="score">15
+            <input type="radio" name="athleticStructure" value="15.5" class="score">15.5
+            <input type="radio" name="athleticStructure" value="16" class="score">16
+            <input type="radio" name="athleticStructure" value="16.5" class="score">16.5
+            <input type="radio" name="athleticStructure" value="17" class="score">17
+            <input type="radio" name="athleticStructure" value="17.5" class="score">17.5
+            <input type="radio" name="athleticStructure" value="18" class="score">18
+            <input type="radio" name="athleticStructure" value="18.5" class="score">18.5
+            <input type="radio" name="athleticStructure" value="19" class="score">19
+            <input type="radio" name="athleticStructure" value="19.5" class="score">19.5
+            <input type="radio" name="athleticStructure" value="20" class="score">20
+        </div>
+        <div class="category">
+            <label>T Breed Type:</label><br>
+            <input type="radio" name="breedType" value="10" class="score">10
+            <input type="radio" name="breedType" value="10.5" class="score">10.5
+            <input type="radio" name="breedType" value="11" class="score">11
+            <input type="radio" name="breedType" value="11.5" class="score">11.5
+            <input type="radio" name="breedType" value="12" class="score">12
+            <input type="radio" name="breedType" value="12.5" class="score">12.5
+            <input type="radio" name="breedType" value="13" class="score">13
+            <input type="radio" name="breedType" value="13.5" class="score">13.5
+            <input type="radio" name="breedType" value="14" class="score">14
+            <input type="radio" name="breedType" value="14.5" class="score">14.5
+            <input type="radio" name="breedType" value="15" class="score">15
+            <input type="radio" name="breedType" value="15.5" class="score">15.5
+            <input type="radio" name="breedType" value="16" class="score">16
+            <input type="radio" name="breedType" value="16.5" class="score">16.5
+            <input type="radio" name="breedType" value="17" class="score">17
+            <input type="radio" name="breedType" value="17.5" class="score">17.5
+            <input type="radio" name="breedType" value="18" class="score">18
+            <input type="radio" name="breedType" value="18.5" class="score">18.5
+            <input type="radio" name="breedType" value="19" class="score">19
+            <input type="radio" name="breedType" value="19.5" class="score">19.5
+            <input type="radio" name="breedType" value="20" class="score">20
+        </div>
+        <div class="category">
+            <label>Q Quality, Balance, Substance:</label><br>
+            <input type="radio" name="qualityBalanceSubstance" value="10" class="score">10
+            <input type="radio" name="qualityBalanceSubstance" value="10.5" class="score">10.5
+            <input type="radio" name="qualityBalanceSubstance" value="11" class="score">11
+            <input type="radio" name="qualityBalanceSubstance" value="11.5" class="score">11.5
+            <input type="radio" name="qualityBalanceSubstance" value="12" class="score">12
+            <input type="radio" name="qualityBalanceSubstance" value="12.5" class="score">12.5
+            <input type="radio" name="qualityBalanceSubstance" value="13" class="score">13
+            <input type="radio" name="qualityBalanceSubstance" value="13.5" class="score">13.5
+            <input type="radio" name="qualityBalanceSubstance" value="14" class="score">14
+            <input type="radio" name="qualityBalanceSubstance" value="14.5" class="score">14.5
+            <input type="radio" name="qualityBalanceSubstance" value="15" class="score">15
+            <input type="radio" name="qualityBalanceSubstance" value="15.5" class="score">15.5
+            <input type="radio" name="qualityBalanceSubstance" value="16" class="score">16
+            <input type="radio" name="qualityBalanceSubstance" value="16.5" class="score">16.5
+            <input type="radio" name="qualityBalanceSubstance" value="17" class="score">17
+            <input type="radio" name="qualityBalanceSubstance" value="17.5" class="score">17.5
+            <input type="radio" name="qualityBalanceSubstance" value="18" class="score">18
+            <input type="radio" name="qualityBalanceSubstance" value="18.5" class="score">18.5
+            <input type="radio" name="qualityBalanceSubstance" value="19" class="score">19
+            <input type="radio" name="qualityBalanceSubstance" value="19.5" class="score">19.5
+            <input type="radio" name="qualityBalanceSubstance" value="20" class="score">20
+        </div>
+        <div class="category">
+            <label>N Neck and Shoulder:</label><br>
+            <input type="radio" name="neckShoulder" value="10" class="score">10
+            <input type="radio" name="neckShoulder" value="10.5" class="score">10.5
+            <input type="radio" name="neckShoulder" value="11" class="score">11
+            <input type="radio" name="neckShoulder" value="11.5" class="score">11.5
+            <input type="radio" name="neckShoulder" value="12" class="score">12
+            <input type="radio" name="neckShoulder" value="12.5" class="score">12.5
+            <input type="radio" name="neckShoulder" value="13" class="score">13
+            <input type="radio" name="neckShoulder" value="13.5" class="score">13.5
+            <input type="radio" name="neckShoulder" value="14" class="score">14
+            <input type="radio" name="neckShoulder" value="14.5" class="score">14.5
+            <input type="radio" name="neckShoulder" value="15" class="score">15
+            <input type="radio" name="neckShoulder" value="15.5" class="score">15.5
+            <input type="radio" name="neckShoulder" value="16" class="score">16
+            <input type="radio" name="neckShoulder" value="16.5" class="score">16.5
+            <input type="radio" name="neckShoulder" value="17" class="score">17
+            <input type="radio" name="neckShoulder" value="17.5" class="score">17.5
+            <input type="radio" name="neckShoulder" value="18" class="score">18
+            <input type="radio" name="neckShoulder" value="18.5" class="score">18.5
+            <input type="radio" name="neckShoulder" value="19" class="score">19
+            <input type="radio" name="neckShoulder" value="19.5" class="score">19.5
+            <input type="radio" name="neckShoulder" value="20" class="score">20
+        </div>
+        <div class="category">
+            <label>B Back, Loin and Hip:</label><br>
+            <input type="radio" name="backLoinHip" value="10" class="score">10
+            <input type="radio" name="backLoinHip" value="10.5" class="score">10.5
+            <input type="radio" name="backLoinHip" value="11" class="score">11
+            <input type="radio" name="backLoinHip" value="11.5" class="score">11.5
+            <input type="radio" name="backLoinHip" value="12" class="score">12
+            <input type="radio" name="backLoinHip" value="12.5" class="score">12.5
+            <input type="radio" name="backLoinHip" value="13" class="score">13
+            <input type="radio" name="backLoinHip" value="13.5" class="score">13.5
+            <input type="radio" name="backLoinHip" value="14" class="score">14
+            <input type="radio" name="backLoinHip" value="14.5" class="score">14.5
+            <input type="radio" name="backLoinHip" value="15" class="score">15
+            <input type="radio" name="backLoinHip" value="15.5" class="score">15.5
+            <input type="radio" name="backLoinHip" value="16" class="score">16
+            <input type="radio" name="backLoinHip" value="16.5" class="score">16.5
+            <input type="radio" name="backLoinHip" value="17" class="score">17
+            <input type="radio" name="backLoinHip" value="17.5" class="score">17.5
+            <input type="radio" name="backLoinHip" value="18" class="score">18
+            <input type="radio" name="backLoinHip" value="18.5" class="score">18.5
+            <input type="radio" name="backLoinHip" value="19" class="score">19
+            <input type="radio" name="backLoinHip" value="19.5" class="score">19.5
+            <input type="radio" name="backLoinHip" value="20" class="score">20
+        </div>
+        <div class="category">
+            <label>LL Legs and Feet:</label><br>
+            <input type="radio" name="legsFeet" value="10" class="score">10
+            <input type="radio" name="legsFeet" value="10.5" class="score">10.5
+            <input type="radio" name="legsFeet" value="11" class="score">11
+            <input type="radio" name="legsFeet" value="11.5" class="score">11.5
+            <input type="radio" name="legsFeet" value="12" class="score">12
+            <input type="radio" name="legsFeet" value="12.5" class="score">12.5
+            <input type="radio" name="legsFeet" value="13" class="score">13
+            <input type="radio" name="legsFeet" value="13.5" class="score">13.5
+            <input type="radio" name="legsFeet" value="14" class="score">14
+            <input type="radio" name="legsFeet" value="14.5" class="score">14.5
+            <input type="radio" name="legsFeet" value="15" class="score">15
+            <input type="radio" name="legsFeet" value="15.5" class="score">15.5
+            <input type="radio" name="legsFeet" value="16" class="score">16
+            <input type="radio" name="legsFeet" value="16.5" class="score">16.5
+            <input type="radio" name="legsFeet" value="17" class="score">17
+            <input type="radio" name="legsFeet" value="17.5" class="score">17.5
+            <input type="radio" name="legsFeet" value="18" class="score">18
+            <input type="radio" name="legsFeet" value="18.5" class="score">18.5
+            <input type="radio" name="legsFeet" value="19" class="score">19
+            <input type="radio" name="legsFeet" value="19.5" class="score">19.5
+            <input type="radio" name="legsFeet" value="20" class="score">20
+        </div>
+        <div class="category">
+            <label>M Movement:</label><br>
+            <input type="radio" name="movement" value="10" class="score">10
+            <input type="radio" name="movement" value="10.5" class="score">10.5
+            <input type="radio" name="movement" value="11" class="score">11
+            <input type="radio" name="movement" value="11.5" class="score">11.5
+            <input type="radio" name="movement" value="12" class="score">12
+            <input type="radio" name="movement" value="12.5" class="score">12.5
+            <input type="radio" name="movement" value="13" class="score">13
+            <input type="radio" name="movement" value="13.5" class="score">13.5
+            <input type="radio" name="movement" value="14" class="score">14
+            <input type="radio" name="movement" value="14.5" class="score">14.5
+            <input type="radio" name="movement" value="15" class="score">15
+            <input type="radio" name="movement" value="15.5" class="score">15.5
+            <input type="radio" name="movement" value="16" class="score">16
+            <input type="radio" name="movement" value="16.5" class="score">16.5
+            <input type="radio" name="movement" value="17" class="score">17
+            <input type="radio" name="movement" value="17.5" class="score">17.5
+            <input type="radio" name="movement" value="18" class="score">18
+            <input type="radio" name="movement" value="18.5" class="score">18.5
+            <input type="radio" name="movement" value="19" class="score">19
+            <input type="radio" name="movement" value="19.5" class="score">19.5
+            <input type="radio" name="movement" value="20" class="score">20
+        </div>
+        <div class="category">
+            <label>Penalties:</label><br>
+            <input type="checkbox" name="penalty" value="-1" class="penalty">-1
+            <input type="checkbox" name="penalty" value="-2" class="penalty">-2
+            <input type="checkbox" name="penalty" value="-3" class="penalty">-3
+        </div>
+        <button type="button" onclick="calculateTotal()">Calculate Total Score</button>
+    </form>
+    <h2>Total Score: <span id="totalScore">0</span></h2>
+
+    <script>
+        function calculateTotal() {
+            let totalScore = 0;
+            const scores = document.querySelectorAll('.score:checked');
+            scores.forEach(score => {
+                totalScore += parseFloat(score.value);
+            });
+
+            const penalties = document.querySelectorAll('.penalty:checked');
+            penalties.forEach(penalty => {
+                totalScore += parseFloat(penalty.value);
+            });
+
+            document.getElementById('totalScore').innerText = totalScore;
+        }
+    </script>
+</body>
+</html>
